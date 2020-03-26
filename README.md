@@ -11,9 +11,11 @@ This is provided as a connection check. It will return the build date if success
 
 <b>PostApplication:</b>
 Will return XML response body showing the new app number from our system if successful.
+<br>
+<br>
 <br>When you have some XML to test:
 <br>1) Enter the Authentication Token.
-<br>2) Uncomment.
+<br>2) Uncomment line #25 in main PostApplication(postApplicationUrl, sampleXml);
 <br>3) Execute.
 
 
