@@ -1,18 +1,21 @@
 # P2PQuickStart
-.Net console app example for credit application submission.
+<h2>.Net console app example for credit application submission.</h2>
 
+<p>
 This is a basic starting point for partners to send credit application data to our P2P service.
+<br>The console app provides a couple quick methods:
+</p>
 
-The console app provides a couple quick methods:
-
-PingService:
+<b>PingService:</b>
 This is provided as a connection check. It will return the build date if successful. No authentication token is necessary.
 
-PostApplication:
-Will return XML response body showing the new app number from our system if successful.
-Uncomment when you have an Authentication token and have some XML to test.
-Enter the Authentication Token 
-Execute
+<b>PostApplication:<b>
+<p>Will return XML response body showing the new app number from our system if successful.
+<br>When you have some XML to test:
+<br>1) Enter the Authentication Token.
+<br>2) Uncomment.
+<br>3) Execute.
+</p>
 
 
 
