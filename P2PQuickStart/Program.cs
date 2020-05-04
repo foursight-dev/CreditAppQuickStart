@@ -13,11 +13,30 @@ namespace ILendingQuickStart
         static void Main(string[] args)
         {
             string authenticationToken = ""; // Enter your authentication token here.
-            string sampleXml = "<?xml version=\"1.0\" encoding=\"utf - 8\"?><AutoApplication apptype=\"test\"><loaninfo><partner_loannumber>test01</partner_loannumber></loaninfo></AutoApplication>";
+            //Sample new application XML key data
+            string sampleXml = "<?xml version=\"1.0\" encoding=\"utf-8\"?>" 
+                                + "<dt_application active=\"yes\" status=\"new\" dtversion=\"2.0\">"
+                                + "<key_data optout=\"no\">"
+                                + "<dt_lender_id>FOU</dt_lender_id>"
+                                + "<dt_dealer_id>123456</dt_dealer_id> "
+                                + "<dt_app_id>ABC123</dt_app_id> "
+                                + "<lender_dealer_id>123_1</lender_dealer_id>"
+                                + "<lender_app_id/>"
+                                + "<requestdate>2020-04-29T15:40:33</requestdate>"
+                                + "<credit_type type =\"individual\"/>"
+                                + "<app_type type =\"personal\"/>"
+                                + "<product_type type =\"retail\" paymentcall =\"no\"/>"
+                                + "<vehicle_type type =\"used\" trade =\"no\"/>"
+                                + "<cust_credit_type type =\"none\"/>"
+                                + "<loan_type type =\"auto\"/>"
+                                + "<source/>"
+                                + "<user_name> SYDNEY FAKENAME </user_name>"
+                                + " </key_data>"
+                                + "</dt_application>";
 
 
 
-            string url = "https://creditapp-p2p.azurewebsites.net";
+            string url = "https://creditapp-p2p.azurewebsites.net"; 
             string pingUrl = $"{url}/API/Admin/GetBuildDate";
             string postApplicationUrl = $"{url}/API/Inbound/PostApplication?authenticationToken={authenticationToken}";
 
